@@ -3,6 +3,7 @@ import PageTitle from '../components/ui/PageTitle'
 import OrangeButton from '../components/ui/OrangeButton'
 
 function IMiru() {
+  
 
   return (
     <>

@@ -1,5 +1,9 @@
 {
     "responded_at": "00:00:00",
+    "data":{
+        "question": 4,
+        "required_question": 3
+    },
     "questions":[
         {
             "number_str": "01",
@@ -8,6 +12,16 @@
         },
         {
             "number_str": "02",
+            "question_text": "相手の気持ちを考えて行動することが多い",
+            "question_type": "radio-YN"
+        },
+        {
+            "number_str": "03",
+            "question_text": "相手の気持ちを考えて行動することが多い",
+            "question_type": "radio-YN"
+        },
+        {
+            "number_str": "04",
             "question_text": "具体的になぜそう判断しましたか。",
             "question_type": "textfield"
         }
