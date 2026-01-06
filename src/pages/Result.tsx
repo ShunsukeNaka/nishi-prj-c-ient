@@ -33,11 +33,11 @@ function Result() {
         診断日{date}　{time}
       </Typography>
 
-      <Stack spacing={1} sx={{ width: 700 }}>
+      <Stack spacing={1} sx={{ width: "100%" }}>
         {dataset.map((d, i) => (
           <Stack key={i} direction="row" alignItems="center" spacing={2}>
             {/* ラベル */}
-            <Typography sx={{ width: 220, textAlign: 'right', color: "white"}}>
+            <Typography sx={{ width: "45%", textAlign: 'center', color: "white"}}>
               {d.type}
             </Typography>
 
