@@ -8,10 +8,12 @@ import AllMiru from './pages/AllMiru';
 import IMiru from './pages/IMiru';
 import Answer from './pages/Answer';
 import Result from './pages/Result';
+import Header from './components/parts/header';
 
 function App() {
   return (
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/mypage" element={<MyPage />} />
