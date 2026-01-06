@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material';
 import PageTitle from '../components/ui/PageTitle'
-import ButtonAnswer from '../components/ui/Answer/ButtonAnswer';
+import ButtonAnswer from '../components/ui/Answer/Answer';
 
 function Answer() {
 
