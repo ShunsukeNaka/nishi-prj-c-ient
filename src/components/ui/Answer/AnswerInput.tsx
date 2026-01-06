@@ -8,7 +8,7 @@ type Question = {
   question_type: string;
 };
 
-export default function ButtonAnswer(props: {text: string}) {
+export default function AnswerInput(props: {text: string}) {
     const [questions, setQuestions] = useState<Question[]>([]);
     const [selectedValue, setSelectedValue] = useState('a');
 

@@ -19,6 +19,7 @@ function App() {
         <Route path="/youmiru" element={<YouMiru />} />
         <Route path="/allmiru" element={<AllMiru />} />
         <Route path="/answer" element={<Answer />} />
+        <Route path="/answer_result" element={<Result />} />
       </Routes>
     </Router>
   );

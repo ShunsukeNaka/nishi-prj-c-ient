@@ -1,6 +1,7 @@
 import { Stack } from '@mui/material';
 import PageTitle from '../components/ui/PageTitle'
-import ButtonAnswer from '../components/ui/Answer/Answer';
+import AnswerInput from '../components/ui/Answer/AnswerInput';
+import OrangeButton from '../components/ui/OrangeButton';
 
 function Answer() {
 
@@ -11,7 +12,9 @@ function Answer() {
       <div>
         <Stack direction="column" sx={{textAlign: "center", alignContent: "center", alignItems: "center"}}>
             {/* <TextAnswer text='相手の気持ちを考えて行動することが多い'/> */}
-            <ButtonAnswer text={''} />
+            <AnswerInput text={''} />
+
+            <OrangeButton text='診断結果' path='/answer_result'/>
         </Stack>
       </div>
     </>
