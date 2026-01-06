@@ -9,6 +9,7 @@ import IMiru from './pages/IMiru';
 import Answer from './pages/Answer';
 import Result from './pages/Result';
 import Header from './components/parts/Header';
+import Result_sub from './pages/Result_sub';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/allmiru" element={<AllMiru />} />
         <Route path="/answer" element={<Answer />} />
         <Route path="/answer_result" element={<Result />} />
+        <Route path="/answer_result/sub" element={<Result_sub/>} />
       </Routes>
     </Router>
   );

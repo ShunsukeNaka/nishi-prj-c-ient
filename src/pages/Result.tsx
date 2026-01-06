@@ -1,6 +1,7 @@
-import { Stack, Box, Typography } from '@mui/material';
+import { Stack, Box, Typography, Card, CardActionArea } from '@mui/material';
 import PageTitle from '../components/ui/PageTitle';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const dataset = [
   { type: '明るさ・人付き合い', score: 20 },
@@ -17,6 +18,8 @@ const MAX = 25;
 
 
 function Result() {
+    const navigate = useNavigate()
+
     const [date, setDate] = useState<string>("12/4")
     const [time, setTime] = useState<string>("21:14")
 
@@ -35,34 +38,38 @@ function Result() {
 
       <Stack spacing={1} sx={{ width: "100%" }}>
         {dataset.map((d, i) => (
-          <Stack key={i} direction="row" alignItems="center" spacing={2}>
-            {/* ラベル */}
-            <Typography sx={{ width: "45%", textAlign: 'center', color: "white"}}>
-              {d.type}
-            </Typography>
+          <Card key={i} sx={{backgroundColor: "#014541", boxShadow: 0}}>
+            <CardActionArea onClick={() => navigate("/answer_resule/sub")}>
+                <Stack key={i} direction="row" alignItems="center" spacing={2}>
+                    {/* ラベル */}
+                    <Typography sx={{ width: "45%", textAlign: 'center', color: "white"}}>
+                    {d.type}
+                    </Typography>
 
-            {/* バー */}
-            <Box
-              sx={{
-                flexGrow: 1,
-                height: 16,
-                backgroundColor: '#eee',
-                borderRadius: 8,
-                overflow: 'hidden',
-              }}
-            >
-              <Box
-                sx={{
-                  width: `${(d.score / MAX) * 100}%`,
-                  height: '100%',
-                  backgroundColor: '#ff9800',
-                }}
-              />
-            </Box>
+                    {/* バー */}
+                    <Box
+                    sx={{
+                        flexGrow: 1,
+                        height: 16,
+                        backgroundColor: '#eee',
+                        borderRadius: 8,
+                        overflow: 'hidden',
+                    }}
+                    >
+                    <Box
+                        sx={{
+                        width: `${(d.score / MAX) * 100}%`,
+                        height: '100%',
+                        backgroundColor: '#ff9800',
+                        }}
+                    />
+                    </Box>
 
-            {/* 数値 */}
-            <Typography sx={{ width: 30,  color: "white" }}>{d.score}</Typography>
-          </Stack>
+                    {/* 数値 */}
+                    <Typography sx={{ width: 30,  color: "white" }}>{d.score}</Typography>
+                </Stack>
+            </CardActionArea>
+          </Card>
         ))}
       </Stack>
     </>
