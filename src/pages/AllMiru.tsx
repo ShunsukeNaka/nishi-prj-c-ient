@@ -1,6 +1,6 @@
 import PageTitle from '../components/ui/PageTitle'
 
-function IMiru() {
+function AllMiru() {
 
   return (
     <>
@@ -9,4 +9,4 @@ function IMiru() {
   )
 }
 
-export default IMiru
+export default AllMiru

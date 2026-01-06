@@ -1,13 +1,15 @@
 import { Box, Card, CardActionArea, Typography } from "@mui/material";
 import type { SvgIconComponent } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
-export default function DiagnosisMenuButton(props: {maintext: string, subtext: string, icon: SvgIconComponent}) {
+export default function DiagnosisMenuButton(props: {maintext: string, subtext: string, icon: SvgIconComponent, path: string}) {
     const Icon = props.icon;
+    const navigate = useNavigate();
 
     return (
         <>
             <Card sx={{width: "50%", alignContent: "center", alignItems: "center" }}>
-                <CardActionArea>
+                <CardActionArea onClick={() => navigate(props.path)}>
                     <Box
                         sx={{
                             display: "flex",

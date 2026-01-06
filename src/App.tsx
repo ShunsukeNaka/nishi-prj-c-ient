@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import DiagnosisMenu from './pages/diagnosis_menu';
 import Home from './pages/Home';
 import MyPage from './pages/mypage';
+import IMiru from './pages/imiru';
+import YouMiru from './pages/YouMiru';
+import AllMiru from './pages/AllMiru';
 
 function App() {
   return (
@@ -11,6 +14,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/mypage" element={<MyPage />} />
         <Route path="/diagnosis_menu" element={<DiagnosisMenu />} />
+        <Route path="/imiru" element={<IMiru />} />
+        <Route path="/youmiru" element={<YouMiru />} />
+        <Route path="/allmiru" element={<AllMiru />} />
       </Routes>
     </Router>
   );

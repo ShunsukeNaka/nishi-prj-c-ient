@@ -11,9 +11,9 @@ function DiagnosisMenu() {
 
       <div>
         <Stack direction="column" sx={{textAlign: "center", alignContent: "center", alignItems: "center"}}>
-            <DiagnosisMenuButton maintext='あいみーる' subtext='自己診断' icon={PersonIcon}/>
-            <DiagnosisMenuButton maintext='ゆーみーる' subtext='他社診断' icon={PersonIcon}/>
-            <DiagnosisMenuButton maintext='おーるみーる' subtext='グループ診断' icon={PersonIcon}/>
+            <DiagnosisMenuButton maintext='あいみーる' subtext='自己診断' icon={PersonIcon} path='/imiru'/>
+            <DiagnosisMenuButton maintext='ゆーみーる' subtext='他社診断' icon={PersonIcon} path='/youmiru'/>
+            <DiagnosisMenuButton maintext='おーるみーる' subtext='グループ診断' icon={PersonIcon} path='/allmiru'/>
         </Stack>
       </div>
     </>
