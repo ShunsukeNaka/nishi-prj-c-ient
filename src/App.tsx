@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import DiagnosisMenu from './pages/diagnosis_menu';
 import Home from './pages/Home';
 import MyPage from './pages/mypage';
-import IMiru from './pages/imiru';
 import YouMiru from './pages/YouMiru';
 import AllMiru from './pages/AllMiru';
+import IMiru from './pages/IMiru';
 
 function App() {
   return (
