@@ -12,6 +12,7 @@ export default function ButtonAnswer(props: {text: string}) {
     const [questions, setQuestions] = useState<Question[]>([]);
     const [selectedValue, setSelectedValue] = useState('a');
 
+    
     console.log(props.text)
     useEffect(() => {
         setQuestions(imiruData.questions);
