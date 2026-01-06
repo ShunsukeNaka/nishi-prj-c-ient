@@ -7,7 +7,7 @@ function Home() {
 
   return (
     <>
-      <Stack direction="column">
+      <Stack direction="column" sx={{alignItems: "center"}}>
         <Card sx={{ width: "300px", height: "250px", margin: "20px" }}>
           <CardActionArea
             sx={{ textAlign: "center", height: "100%" }}
