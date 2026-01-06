@@ -7,6 +7,7 @@ import YouMiru from './pages/YouMiru';
 import AllMiru from './pages/AllMiru';
 import IMiru from './pages/IMiru';
 import Answer from './pages/Answer';
+import Result from './pages/Result';
 
 function App() {
   return (
