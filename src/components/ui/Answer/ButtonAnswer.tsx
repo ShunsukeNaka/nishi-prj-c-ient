@@ -1,4 +1,4 @@
-import { Box, Radio, Stack, TextField, Typography } from "@mui/material";
+import { Stack, TextField, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import imiruData from "../../../testdata/imiru.json";
 import RadioButton from "./RadioButton";
