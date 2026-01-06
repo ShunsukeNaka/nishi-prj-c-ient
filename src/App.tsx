@@ -24,7 +24,7 @@ function App() {
         <Route path="/allmiru" element={<AllMiru />} />
         <Route path="/answer" element={<Answer />} />
         <Route path="/answer_result" element={<Result />} />
-        <Route path="/answer_result/sub" element={<Result_sub/>} />
+        <Route path="/answer_result/:type" element={<Result_sub/>} />
       </Routes>
     </Router>
   );

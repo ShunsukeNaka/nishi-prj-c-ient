@@ -39,7 +39,7 @@ function Result() {
       <Stack spacing={1} sx={{ width: "100%" }}>
         {dataset.map((d, i) => (
           <Card key={i} sx={{backgroundColor: "#014541", boxShadow: 0}}>
-            <CardActionArea onClick={() => navigate("/answer_resule/sub")}>
+            <CardActionArea onClick={() => navigate(`/answer_result/${i}`)}>
                 <Stack key={i} direction="row" alignItems="center" spacing={2}>
                     {/* ラベル */}
                     <Typography sx={{ width: "45%", textAlign: 'center', color: "white"}}>

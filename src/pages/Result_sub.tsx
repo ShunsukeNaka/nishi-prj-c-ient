@@ -1,9 +1,12 @@
+import { useParams } from 'react-router-dom';
 import PageTitle from '../components/ui/PageTitle';
 
 function Result_sub() {
+  const { type } = useParams();
+  
   return (
     <>
-      <PageTitle text={"診断結果 sub"}/>
+      <PageTitle text={`診断結果 ${type}`}/>
 
       <div>
         {/* <Stack direction="column" sx={{textAlign: "center", alignContent: "center", alignItems: "center"}}>
