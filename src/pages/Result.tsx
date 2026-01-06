@@ -26,7 +26,7 @@ function Result() {
     useEffect(() => {
         // eslint-disable-next-line react-hooks/set-state-in-effect
         setDate("12/4")
-        setTime("12/4")
+        setTime("21:14")
     }, [])
   return (
     <>
