@@ -8,7 +8,7 @@ import AllMiru from './pages/AllMiru';
 import IMiru from './pages/IMiru';
 import Answer from './pages/Answer';
 import Result from './pages/Result';
-import Header from './components/parts/header';
+import Header from './components/parts/Header';
 
 function App() {
   return (
