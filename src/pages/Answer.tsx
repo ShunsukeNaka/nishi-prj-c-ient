@@ -8,19 +8,18 @@ import { useEffect, useState } from 'react';
 import SimpleProgress from '../components/ui/Answer/ProgressBar';
 
 function Answer() {
-  const [count, setCount] = useState<number>(0);
-  const [answered, setAnswered] = useState<boolean[]>([]);
+  // const [answered, setAnswered] = useState<boolean[]>([]);
   const [answeredSet, setAnsweredSet] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     // setAnswered(Array(imiruData.questions.length).fill(false));
   }, []);
 
-  function handleAnswerd(i: number){
-    setAnswered(prev =>
-      prev.map((v, idx) => (idx === i ? true : v))
-    );
-  }
+  // function handleAnswerd(i: number){
+  //   setAnswered(prev =>
+  //     prev.map((v, idx) => (idx === i ? true : v))
+  //   );
+  // }
 
   const markAnswered = (index: string) => {
     setAnsweredSet(prev => {
