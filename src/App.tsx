@@ -6,7 +6,7 @@ import MyPage from './pages/mypage';
 import YouMiru from './pages/YouMiru';
 import AllMiru from './pages/AllMiru';
 import IMiru from './pages/IMiru';
-import Anser from './pages/Anser';
+import Answer from './pages/Answer';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Route path="/imiru" element={<IMiru />} />
         <Route path="/youmiru" element={<YouMiru />} />
         <Route path="/allmiru" element={<AllMiru />} />
-        <Route path="/anser" element={<Anser />} />
+        <Route path="/answer" element={<Answer />} />
       </Routes>
     </Router>
   );

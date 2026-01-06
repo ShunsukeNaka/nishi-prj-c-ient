@@ -1,9 +1,9 @@
 import { Stack } from '@mui/material';
-import PageTitle from '.././components/ui/PageTitle'
+import PageTitle from '../components/ui/PageTitle'
 import DiagnosisMenuButton from '../components/ui/DiagnosisMenuButton'
 import PersonIcon from '@mui/icons-material/Person';
 
-function DiagnosisMenu() {
+function Answer() {
 
   return (
     <>
@@ -20,4 +20,4 @@ function DiagnosisMenu() {
   )
 }
 
-export default DiagnosisMenu
+export default Answer

@@ -26,7 +26,7 @@ function IMiru() {
           作成することができるよ！
         </Typography>
 
-        <OrangeButton text='診断' path='/anser'/>
+        <OrangeButton text='診断' path='/answer'/>
       </Box>
     </>
   )

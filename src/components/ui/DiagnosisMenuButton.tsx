@@ -8,7 +8,7 @@ export default function DiagnosisMenuButton(props: {maintext: string, subtext: s
 
     return (
         <>
-            <Card sx={{width: "50%", alignContent: "center", alignItems: "center" }}>
+            <Card sx={{width: "90%", alignContent: "center", alignItems: "center" }}>
                 <CardActionArea onClick={() => navigate(props.path)}>
                     <Box
                         sx={{
